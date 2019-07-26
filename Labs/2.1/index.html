@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Data Visualisation"/>
+    <meta name="keywords" content="HTML, CSS, D3"/>
+    <meta name="author" content="Klim Huynh"/>
+
+    <title>Task 2.1 D3 Data Binding</title>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+<body>
+
+  <h1>The D3 Journey starts here...</h1>
+
+  <script>
+  //example from Murray
+
+  var dataset = [14, 5, 26, 23, 9];
+
+    d3.select("body").selectAll("p")
+        .data(dataset)
+        .enter()
+        .append("p")
+        .text(function(d) {
+          if (d < 10) {
+              return "Joe watched " + d + " cat videos today.";
+          } else {
+              return "Warning: Joe watched " + d + " cat videos today.";
+            }
+        })
+        .style("color", function(d) {
+          if (d < 10) {
+              return "black";
+          } else {
+              return "red";
+          }
+        });
+
+  </script>
+
+  <br>
+  <bf>
+  <footer style="color:grey">COS30045 Data Visualisation<br>
+    Klim Huynh</footer>
+</body>
+</html>

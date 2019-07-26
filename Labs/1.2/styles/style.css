@@ -1,0 +1,70 @@
+/*
+filename: style.css
+author: Klim Huynh
+created: 05/03/2019
+last modified: 05/03/2019
+description: index.html
+*/
+
+body {
+  margin:2em;
+}
+h1 {
+  color:darkblue;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: auto;
+}
+
+h2 {
+  color:darkgrey;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
+figure {
+  padding: 5px;
+  font-size: 1em;
+  display:table;
+  background-color: #fff;
+}
+
+figure img {
+  display: block;
+}
+
+figcaption {
+  font-style:italic;
+  width: 554px;
+  caption-side:bottom;
+  background: #fff;
+  padding: 0 5px 5px;
+}
+
+footer {
+  background-color: darkgrey;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#oldButton {
+  background-color: blue;
+}
+
+#newButton {
+  background-color: red;
+
+}
